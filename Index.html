@@ -2260,9 +2260,9 @@ const IIA_QUESTIONS = [{
   cat: "QAIP"
 }, {
   q: "Assessments rotated among three or more peer organizations within the same industry, regional association, or affinity group:",
-  c: ["May be considered independent, provided independence and objectivity are not impaired and all team members can exercise their responsibilities fully", "Are automatically classified as self-assessments with independent validation under Standard 8.4", "Are never considered independent because shared industry interests compromise objectivity", "Must include at least one organization from outside the industry to qualify as independent"],
+  c: ["May be considered independent, provided independence and objectivity are not impaired and all team members can exercise their responsibilities fully", "Are classified as self-assessments with independent validation, since peer organizations are presumed not independent of one another", "Are considered independent only when the peer organizations operate in different industries, regions, or affinity groups", "Require review by The IIA's Quality Assurance department before independence can be confirmed"],
   a: 0,
-  e: "Standard 8.4 states that assessments rotated among three or more peer organizations 'may be considered independent.' However, care must be exercised to ensure independence and objectivity are not impaired and all team members can exercise their responsibilities fully. The key distinction from two-organization reciprocal reviews is the absence of a direct bilateral dependency. Industry membership alone does not disqualify the assessment.",
+  e: "Standard 8.4 states that assessments rotated among three or more peer organizations 'may be considered independent.' However, care must be exercised to ensure independence and objectivity are not impaired and all team members can exercise their responsibilities fully. The key distinction from two-organization reciprocal reviews is the absence of a direct bilateral dependency: rotation among three or more peer organizations removes that concern, and shared industry, regional, or affinity-group membership does not by itself disqualify the assessment, nor is there any requirement for The IIA itself to review or confirm it.",
   cat: "QAIP"
 }, {
   q: "Individuals from another department of the same organization, even if organizationally separate from the internal audit function, are:",
@@ -2602,9 +2602,9 @@ const IIA_QUESTIONS = [{
   cat: "Criteria/Condition/Cause/Effect"
 }, {
   q: "According to Standard 14.3, the 'root cause' of a finding is BEST described as:",
-  c: ["A control deficiency that must always be documented by internal auditors independently, regardless of management's perspective", "The direct, immediate reason the condition exists, which is always the same as the control deficiency identified", "The residual risk that remains despite having controls in place, which defines the significance of the finding", "An underlying or deeper issue that contributed to the condition, often determined through collaboration with management who may better understand operational processes, though internal auditors remain responsible for evaluating whether the identified root cause is reasonable and supported by the evidence"],
+  c: ["A control deficiency that internal auditors document independently, without factoring in management's perspective on operations", "The direct, immediate reason the condition exists, which is effectively synonymous with the control deficiency identified", "The residual risk that remains despite having controls in place, which defines the significance of the finding", "An underlying or deeper issue that contributed to the condition, often determined through collaboration with management who may better understand operational processes, though internal auditors remain responsible for evaluating whether the identified root cause is reasonable and supported by the evidence"],
   a: 3,
-  e: "Standard 14.3 states: 'The root cause of the difference...is an underlying or deeper issue that contributed to the condition. At its simplest, determining the root cause involves asking a series of questions about why the difference exists.' Identifying the root cause often involves collaboration with management, who may better understand operational processes; however, internal auditors remain responsible for evaluating whether the identified root cause is reasonable and supported by the evidence. Root cause is distinct from the direct cause; it is deeper and often identified collaboratively.",
+  e: "Standard 14.3 states: 'The root cause of the difference...is an underlying or deeper issue that contributed to the condition. At its simplest, determining the root cause involves asking a series of questions about why the difference exists.' Identifying the root cause often involves collaboration with management, who may better understand operational processes; however, internal auditors remain responsible for evaluating whether the identified root cause is reasonable and supported by the evidence. Root cause is distinct from the direct, immediate cause (which describes only the mechanism of the deviation, not why it happened) and is deeper than a bare list of control gaps compiled without management input.",
   cat: "Criteria/Condition/Cause/Effect"
 }, {
   q: "The 'effect' element of an engagement finding under Standard 14.3 refers to:",
@@ -2728,9 +2728,9 @@ const IIA_QUESTIONS = [{
   cat: "Audit Plan"
 }, {
   q: "The CAE proposes implementing an artificial intelligence tool to assist with audit planning and workpaper review. Several auditors express concern that they have little experience using AI. Which consideration is most critical before implementation?",
-  c: ["Whether the technology is supported by appropriate governance, staff training, and quality controls.", "Whether the software vendor guarantees that no audit errors will occur.", "Whether AI can completely replace supervisory review.", "Whether competing organizations have already implemented similar technology."],
+  c: ["Whether the technology is supported by appropriate governance, staff training, and quality controls.", "Whether the software vendor's marketing claims about accuracy have been independently verified.", "Whether AI reduces the need for auditor supervision during workpaper review.", "Whether competing organizations have already implemented similar technology."],
   a: 0,
-  e: "Technology should enhance audit effectiveness, but successful implementation depends on governance, staff training, and quality controls being in place, not just acquiring the tool. AI should support professional judgment and supervision rather than replace it, what competitors have done is informative but not determinative, and no vendor can guarantee error-free results.",
+  e: "Technology should enhance audit effectiveness, but successful implementation depends on governance, staff training, and quality controls being in place, not just acquiring the tool. Vendor accuracy claims are worth checking but aren't the most critical factor, AI should support professional judgment and supervision rather than reduce the auditor's role in reviewing its output, and what competitors have done is informative context rather than the deciding consideration.",
   cat: "Audit Function"
 }, {
   q: "The CAE reports the following year-end results: 96% of the audit plan completed; average engagement completed below budget; stakeholder satisfaction increased; repeat findings increased significantly; and several high-risk recommendations remained unimplemented for more than a year. Which conclusion is most appropriate?",
@@ -2812,9 +2812,9 @@ const IIA_QUESTIONS = [{
   cat: "Independence & Objectivity"
 }, {
   q: "During the annual risk assessment, the finance department receives the highest risk rating because of recent staff turnover. Meanwhile, the procurement department receives a moderate rating despite several unresolved high-risk audit findings from prior years. What should the CAE do?",
-  c: ["Prioritize procurement because unresolved high-risk findings automatically require annual audits.", "Prioritize finance because current staffing issues always present greater risk than historical findings.", "Reevaluate both risk assessments to determine whether unresolved findings and recent organizational changes have been appropriately weighted.", "Audit both departments because each presents evidence of elevated risk."],
+  c: ["Prioritize procurement because unresolved findings from prior years should outweigh any other risk factor in the current assessment.", "Prioritize finance because recent staffing changes are the most reliable indicator of current risk levels.", "Reevaluate both risk assessments to determine whether unresolved findings and recent organizational changes have been appropriately weighted.", "Audit both departments because each presents evidence of elevated risk."],
   a: 2,
-  e: "Risk assessment calls for professional judgment weighing multiple factors together, so both departments' ratings should be revisited to confirm that unresolved prior findings and recent staffing changes have been properly weighted before deciding where to focus. Staff turnover shouldn't automatically outweigh other significant risk indicators, unresolved high-risk findings don't by themselves dictate audit frequency, and auditing both departments outright skips the step of first validating that the ratings reflect current risk.",
+  e: "Risk assessment calls for professional judgment weighing multiple factors together, so both departments' ratings should be revisited to confirm that unresolved prior findings and recent staffing changes have been properly weighted before deciding where to focus. Treating either factor in isolation as the deciding one, whether it's prior findings or recent staff turnover, skips that weighing process, and committing to audit both departments outright skips the step of first validating that the ratings reflect current risk.",
   cat: "Audit Plan"
 }, {
   q: "An engagement identifies a significant control weakness that could expose the organization to regulatory penalties. Management agrees with the finding but requests delaying the final report until after the next board meeting because a corrective action plan is still being developed. What should the CAE do?",
@@ -3056,6 +3056,186 @@ const IIA_QUESTIONS = [{
   a: 2,
   e: "Engagement planning is an iterative process, so when significant new risks surface after planning has started, the team should evaluate their significance and modify the engagement objectives and procedures as appropriate. Sticking rigidly to the original scope risks reducing the engagement's effectiveness, deferring the risks to next cycle could expose the organization unnecessarily in the meantime, and while management's input is valuable, it's internal audit that determines the engagement's scope.",
   cat: "Findings Framework"
+}, {
+  q: "During a quarterly meeting, the audit committee asks the CAE to begin reporting on emerging ESG and cybersecurity risks in addition to financial reporting risks. Senior management believes those topics should remain within management reporting. What should the CAE do?",
+  c: ["Limit reporting to financial risks because they are the board's primary responsibility.", "Report only risks specifically requested by senior management.", "Incorporate information that enables the board to fulfill its oversight responsibilities.", "Delay reporting until an engagement covering those areas has been completed."],
+  a: 2,
+  e: "The CAE should provide information that helps the board exercise effective oversight, including significant nonfinancial risks such as emerging ESG and cybersecurity exposures, rather than restricting reporting to only financial matters or only what management wants shared. Reference: Standard 8.1 - Board Interaction.",
+  cat: "Board Interaction"
+}, {
+  q: "A newly approved audit requires expertise in artificial intelligence that no member of the internal audit activity possesses. The audit is considered high priority. What is the BEST course of action?",
+  c: ["Remove the engagement from the audit plan.", "Assign the engagement to the most experienced auditor available.", "Obtain the necessary expertise through appropriate resources.", "Reduce the audit scope to match existing competencies."],
+  a: 2,
+  e: "The CAE should ensure sufficient competencies are available to complete the engagement effectively, which may mean bringing in outside expertise rather than dropping the engagement, assigning it to someone without the needed skill set, or shrinking the scope to fit existing gaps. Reference: Standard 8.2 - Resources.",
+  cat: "Resources"
+}, {
+  q: "Senior management decides not to implement a recommendation addressing a significant governance weakness. The CAE believes the residual risk exceeds the board's risk tolerance. What should the CAE do?",
+  c: ["Remove the recommendation from the final report.", "Accept management's decision because risk ownership belongs to management.", "Communicate the matter through the established escalation process.", "Perform another audit before notifying the board."],
+  a: 2,
+  e: "When a significant issue exceeds the organization's established risk tolerance, it should be escalated according to the agreed-upon board communication process rather than silently accepted, buried, or delayed behind another engagement. Reference: Standard 8.1 - Board Interaction.",
+  cat: "Governance"
+}, {
+  q: "The organization changes its strategic direction by entering several new international markets. The approved annual audit plan has not yet begun. What should the CAE do FIRST?",
+  c: ["Continue the existing plan because it has board approval.", "Revise the audit plan to reflect the changed risk environment.", "Perform only advisory engagements during the transition.", "Wait until next year's planning cycle."],
+  a: 1,
+  e: "The audit plan should remain aligned with the organization's current strategies and risks, so a major strategic shift like entering new international markets calls for revising the plan rather than sticking rigidly to an outdated one or waiting a full year.",
+  cat: "Internal Audit Strategy"
+}, {
+  q: "An external quality assessment identified several improvement opportunities but concluded the internal audit activity generally conforms to the Standards. Which action is MOST appropriate?",
+  c: ["Report only the positive conclusion.", "Ignore recommendations because conformance was achieved.", "Develop improvement actions and communicate appropriate results.", "Schedule another external assessment immediately."],
+  a: 2,
+  e: "Quality assessment results, including improvement opportunities identified alongside a generally-conforms conclusion, should be used to strengthen the internal audit activity through continuous improvement and appropriate communication of results, not simply reported selectively or set aside. Reference: Quality Assurance Standards.",
+  cat: "Quality Assurance"
+}, {
+  q: "While planning an audit of an automated purchasing system, auditors discover that over 95% of transactions are processed without manual intervention. Which audit approach is MOST appropriate?",
+  c: ["Increase manual sampling only.", "Focus primarily on application controls and automated processes.", "Ignore automated controls because no manual review exists.", "Test only transactions exceeding a monetary threshold."],
+  a: 1,
+  e: "Highly automated environments require greater emphasis on application and automated controls, since that's where the vast majority of processing risk actually resides, rather than relying on manual sampling or a simple dollar threshold.",
+  cat: "Technology"
+}, {
+  q: "A senior internal auditor consistently produces high-quality work but has limited knowledge of cloud computing, an area that will dominate next year's audit plan. Which action BEST supports the internal audit activity?",
+  c: ["Exclude cloud audits from the plan.", "Assign another employee permanently.", "Invest in developing the required competency.", "Delay technology audits indefinitely."],
+  a: 2,
+  e: "Internal audit competencies should evolve with the organization's changing risks, so investing in developing the auditor's cloud computing knowledge better supports the function than dropping the coverage area or indefinitely delaying it.",
+  cat: "Human Resources"
+}, {
+  q: "An engagement identified numerous minor findings but only one issue that could materially affect achievement of organizational objectives. How should the CAE communicate the results?",
+  c: ["Give equal emphasis to every finding.", "Highlight the significant issue while presenting supporting observations appropriately.", "Report only the material issue.", "Allow management to determine report emphasis."],
+  a: 1,
+  e: "Communications should clearly emphasize the matters most important to stakeholders, meaning the material issue should stand out while the minor findings are still presented appropriately rather than given equal weight or omitted entirely.",
+  cat: "Communication"
+}, {
+  q: "Management has implemented controls that reduce operational risk but significantly increase compliance risk. What should internal audit evaluate FIRST?",
+  c: ["Whether total residual risk remains acceptable.", "Whether operating costs have increased.", "Whether management documented every control.", "Whether employees support the new process."],
+  a: 0,
+  e: "Internal audit evaluates whether risk responses appropriately manage overall residual risk, so when a control trade-off shifts risk from one category to another, the priority is assessing whether the combined residual risk is still acceptable, not cost, documentation, or employee sentiment alone.",
+  cat: "Risk Management"
+}, {
+  q: "The CAE reports that 100% of the annual audit plan was completed. However, the board remains dissatisfied because major emerging risks were not addressed. Which performance measure would BEST complement plan completion?",
+  c: ["Number of audit reports issued.", "Average report length.", "Coverage of significant organizational risks.", "Percentage of scheduled audit hours used."],
+  a: 2,
+  e: "Performance should measure whether internal audit addressed the organization's most significant risks, not merely completed planned work, so tracking coverage of significant risks better reflects value than activity counts like reports issued or hours used.",
+  cat: "Performance Measurement"
+}, {
+  q: "Following several acquisitions, the board asks internal audit to determine whether governance practices are operating consistently across all subsidiaries. Management proposes limiting the engagement to reviewing only documented policies because visiting every location would be costly. Which approach is BEST?",
+  c: ["Accept management's proposal because governance begins with documented policies.", "Evaluate whether governance processes are operating effectively, using procedures sufficient to support a conclusion.", "Review only subsidiaries with prior audit findings.", "Limit testing to financial reporting controls because governance is management's responsibility."],
+  a: 1,
+  e: "Governance assurance requires evaluating how governance actually operates in practice, not merely whether policies exist on paper, so the engagement should use procedures sufficient to support a conclusion rather than being scoped down to a document review or narrowed to only flagged subsidiaries.",
+  cat: "Governance"
+}, {
+  q: "During planning, management rates a newly implemented cloud platform as low risk because no security incidents have occurred. However, internal audit identifies several critical control weaknesses. What should the audit team do?",
+  c: ["Accept management's risk assessment because management owns risk.", "Base audit procedures solely on historical incidents.", "Independently assess the risk when determining engagement priorities.", "Delay the engagement until sufficient incident data exists."],
+  a: 2,
+  e: "Internal audit uses independent professional judgment when assessing risk, so identified control weaknesses should inform the audit team's own risk assessment rather than simply deferring to management's incident-free rating or waiting for more historical data to accumulate.",
+  cat: "Risk Management"
+}, {
+  q: "While performing an engagement, auditors obtain evidence supporting two different conclusions regarding the effectiveness of a key control. What is the BEST action?",
+  c: ["Report the more favorable conclusion to maintain objectivity.", "Expand procedures until sufficient appropriate evidence supports a conclusion.", "Average the results and conclude the control is partially effective.", "Ask management which conclusion is most reasonable."],
+  a: 1,
+  e: "Conclusions should be supported by sufficient and appropriate evidence, so conflicting evidence calls for expanding procedures until a well-supported conclusion can be reached, rather than picking the favorable result, averaging the findings, or deferring the judgment call to management.",
+  cat: "Internal Audit Methodology"
+}, {
+  q: "Internal audit uses data analytics to identify unusual journal entries. The analysis identifies hundreds of anomalies, but most are legitimate business transactions. What should the auditors do NEXT?",
+  c: ["Report every anomaly as a control deficiency.", "Ignore the results because the analytics produced false positives.", "Perform additional procedures to determine which anomalies represent audit issues.", "Conclude automated controls are ineffective."],
+  a: 2,
+  e: "Analytical results require validation before conclusions are reached, so the next step is performing additional procedures to separate genuine audit issues from legitimate transactions, rather than treating every anomaly as a deficiency or dismissing the analysis outright.",
+  cat: "Technology"
+}, {
+  q: "During an audit committee meeting, directors ask the CAE whether a recently discovered operational issue should immediately be classified as a significant risk requiring board attention. The available evidence is incomplete. What is the BEST response?",
+  c: ["Escalate immediately because all unresolved issues should be reported.", "Delay discussion until the next quarterly meeting.", "Explain the current facts, the remaining uncertainties, and the planned assessment.", "Wait until management determines the significance."],
+  a: 2,
+  e: "Board communication should be timely, balanced, and based on available evidence, so the best response lays out what is currently known, what remains uncertain, and how the matter will be further assessed, rather than over-escalating an incomplete picture or delaying the conversation entirely. Reference: Standard 8.1 - Board Interaction.",
+  cat: "Board Interaction"
+}, {
+  q: "The audit plan requires 8,000 hours. Available staff can provide only 6,500 hours. Management refuses additional funding but expects the original plan to be completed. What should the CAE do?",
+  c: ["Require auditors to work additional unpaid hours.", "Complete every engagement with reduced testing.", "Inform the board of the resource shortfall and its impact.", "Eliminate documentation requirements to improve efficiency."],
+  a: 2,
+  e: "Resource limitations affecting the audit plan should be communicated to the board so it can make an informed decision, rather than being absorbed through unpaid overtime, quietly thinning testing across every engagement, or cutting documentation. Reference: Standard 8.2 - Resources.",
+  cat: "Resource Management"
+}, {
+  q: "The CAE wants to evaluate whether internal audit is creating value rather than simply completing engagements. Which metric BEST supports this objective?",
+  c: ["Average audit report length.", "Percentage of recommendations that reduced significant risks.", "Number of meetings attended by auditors.", "Average fieldwork hours per engagement."],
+  a: 1,
+  e: "Value is better reflected by measuring improvements to significant organizational risks, such as the percentage of recommendations that actually reduced those risks, than by activity-based measures like report length, meeting attendance, or hours logged.",
+  cat: "Performance Measurement"
+}, {
+  q: "An audit identifies control weaknesses that individually appear immaterial. Collectively, however, they expose the organization to substantial financial loss. What should internal audit conclude?",
+  c: ["Report each issue separately as immaterial.", "Evaluate the combined effect before reaching a conclusion.", "Disregard the issues because no individual weakness is significant.", "Recommend increasing insurance coverage instead."],
+  a: 1,
+  e: "Audit conclusions should consider the cumulative effect of related deficiencies, so the team needs to evaluate the combined exposure rather than assessing each weakness in isolation, dismissing them individually, or substituting a conclusion with an unrelated recommendation like more insurance.",
+  cat: "Financial Management"
+}, {
+  q: "A business unit consistently implements audit recommendations promptly but rarely consults internal audit during major organizational changes. As a result, preventable control issues continue to occur. Which action would MOST improve stakeholder value?",
+  c: ["Increase the frequency of assurance engagements.", "Encourage earlier engagement through advisory services where appropriate.", "Reduce communication to preserve independence.", "Escalate the issue directly to the board."],
+  a: 1,
+  e: "Appropriate advisory involvement earlier in major changes can improve governance and prevent recurring control issues without internal audit assuming management responsibility, which is a more targeted fix than simply adding more assurance engagements, pulling back communication, or escalating straight to the board.",
+  cat: "Stakeholder Relationships"
+}, {
+  q: "A newly appointed CEO asks the CAE to guarantee that fraud will always be detected through internal audits. What is the BEST response?",
+  c: ["Agree, because fraud detection is internal audit's primary responsibility.", "Explain that internal audit provides reasonable, not absolute, assurance.", "Recommend eliminating management's fraud monitoring activities.", "Limit future audits to fraud-related engagements."],
+  a: 1,
+  e: "Internal audit provides reasonable assurance and cannot guarantee that all fraud will be detected, so the CAE should clarify this expectation rather than agreeing to an unattainable guarantee, suggesting management drop its own fraud monitoring, or narrowing the entire audit plan to fraud alone.",
+  cat: "CAE Responsibilities"
+}, {
+  q: "Management accepted a high residual risk after implementing a less expensive control than originally proposed. The risk remains within management's documented tolerance but exceeds the tolerance previously communicated by the board. What should the CAE do?",
+  c: ["Accept management's decision because risk ownership belongs to management.", "Report the situation to the board using the established escalation process.", "Recommend that management immediately implement the original control.", "Reclassify the engagement as a consulting engagement."],
+  a: 1,
+  e: "When a residual risk exceeds the tolerance previously communicated by the board, the matter should be escalated through the established process, even though management believes it falls within its own documented tolerance, rather than simply deferring to management, dictating a specific control fix, or reclassifying the engagement type.",
+  cat: "Risk Management"
+}, {
+  q: "A CAE is updating the annual audit plan. Two engagements have identical risk ratings. One supports a major strategic initiative beginning next month, while the other involves a mature process with no recent changes. Which engagement should receive higher priority?",
+  c: ["The mature process because historical data are more reliable.", "The strategic initiative because of its greater uncertainty.", "Both should receive equal priority.", "The engagement requiring fewer audit hours."],
+  a: 1,
+  e: "Significant organizational change generally increases risk and audit priority, so the engagement supporting the new strategic initiative warrants higher priority than a stable, unchanged process, even with identical risk ratings on paper.",
+  cat: "Internal Audit Strategy"
+}, {
+  q: "An audit of privileged user access identifies one administrator account that bypasses multi-factor authentication. Management explains it is needed for emergency system recovery and has never been abused. What is the BEST audit conclusion?",
+  c: ["The control is effective because no incidents occurred.", "The exception should be evaluated within the overall control framework before concluding.", "The account should be removed immediately.", "No finding is necessary because compensating controls always eliminate risk."],
+  a: 1,
+  e: "Internal audit evaluates whether overall controls adequately manage the associated risk, so the exception needs to be assessed within the broader control framework rather than being excused by a clean incident history, resolved by immediate removal, or dismissed on the assumption that compensating controls always fully offset risk.",
+  cat: "Technology"
+}, {
+  q: "Near the end of fieldwork, management provides additional evidence that changes one audit finding from \"High\" to \"Moderate\" risk. What should the engagement team do?",
+  c: ["Note the evidence in the workpapers but keep the original risk rating since testing has already concluded.", "Revise the conclusion if the evidence is reliable and sufficient.", "Downgrade the finding to a minor observation without formally reevaluating the risk rating.", "Ask the audit committee to determine the rating."],
+  a: 1,
+  e: "Conclusions should reflect all relevant, reliable evidence obtained before reporting, so late-arriving evidence should be evaluated and, if reliable and sufficient, used to formally revise the rating. Documenting the evidence without updating the rating, or softening the finding's status without a formal reassessment, both leave the conclusion out of step with the evidence, and rating a finding is the engagement team's responsibility rather than the audit committee's.",
+  cat: "Communication"
+}, {
+  q: "During an engagement, internal audit observes that the board receives extensive financial reporting but very limited information regarding cybersecurity, third-party risk, and business continuity. Which concern is MOST significant?",
+  c: ["Financial reporting receives too much attention.", "The board may lack sufficient information for effective oversight.", "Internal audit should begin auditing only nonfinancial risks.", "Management should stop preparing financial reports."],
+  a: 1,
+  e: "Effective governance requires information covering the organization's significant risks, so the core concern is that the board may not have enough visibility into cybersecurity, third-party, and continuity risks to exercise effective oversight, not that financial reporting itself is excessive or should be cut back.",
+  cat: "Governance"
+}, {
+  q: "The CAE can either outsource a specialized cybersecurity audit or postpone three moderate-risk operational audits due to staffing limitations. Which factor should MOST influence the decision?",
+  c: ["Auditor preference.", "Relative impact on achievement of the audit plan and organizational risks.", "The number of reports that will be issued.", "Historical completion rates."],
+  a: 1,
+  e: "Resource decisions should focus on addressing the organization's most significant risks, so the CAE should weigh the relative impact each option has on the audit plan and overall risk coverage rather than staff preference, report counts, or past completion statistics.",
+  cat: "Resource Management"
+}, {
+  q: "An auditor identifies a statistically significant deviation rate during testing. Management argues the deviation has no practical effect because no losses have occurred. What should the auditor evaluate NEXT?",
+  c: ["Whether the deviation affects control effectiveness and audit objectives.", "Whether management agrees with the sampling results.", "Whether additional losses occurred after fieldwork.", "Whether similar findings existed five years ago."],
+  a: 0,
+  e: "Audit conclusions depend on the effect of deviations on control effectiveness and the engagement objectives, not solely on whether a loss has actually materialized, so the auditor should assess that impact rather than deferring to management's agreement, waiting for future losses, or looking at historical findings.",
+  cat: "Internal Audit Methodology"
+}, {
+  q: "Which indicator BEST demonstrates that the internal audit activity is aligned with organizational strategy?",
+  c: ["Average audit report completion time.", "Percentage of audit coverage devoted to strategic and emerging risks.", "Number of recommendations issued.", "Average engagement budget."],
+  a: 1,
+  e: "Strategic alignment is best demonstrated by the percentage of audit coverage devoted to the organization's highest-priority strategic and emerging risks, rather than by activity metrics like report turnaround time, recommendation counts, or budget size.",
+  cat: "Performance Measurement"
+}, {
+  q: "Senior management believes internal audit should avoid informal discussions during engagements to preserve objectivity. The CAE believes ongoing communication improves engagement quality. Which approach is BEST?",
+  c: ["Avoid communication until the final report.", "Maintain appropriate communication throughout the engagement while preserving objectivity.", "Communicate only with the audit committee.", "Allow management to determine communication frequency."],
+  a: 1,
+  e: "Timely communication throughout an engagement improves understanding and quality without compromising objectivity, so the best approach maintains appropriate ongoing dialogue rather than withholding all communication until the final report, restricting it to the audit committee, or letting management set the pace.",
+  cat: "Stakeholder Relationships"
+}, {
+  q: "Following a significant control failure, the board asks why internal audit did not identify the issue during the previous audit. The engagement had been scoped to exclude the failed process based on the approved risk assessment at that time. What is the BEST response?",
+  c: ["Accept responsibility because every significant issue should be detected.", "Explain how the approved risk assessment determined the engagement scope.", "State that management is solely responsible for controls.", "Recommend repeating every prior engagement."],
+  a: 1,
+  e: "The CAE should explain that the engagement scope was determined using the approved risk assessment and the information available at the time, since internal audit provides reasonable assurance based on that scoping rather than guaranteeing every issue will be caught, and shifting blame entirely to management or proposing to redo every past engagement wouldn't address the board's question.",
+  cat: "CAE Responsibilities"
 }];
 
 /* ---------------------------------------------------------------
@@ -4614,13 +4794,13 @@ const MOCK_EXAM_1 = [{
   }, {
     "q": "Standard 14.4 describes which of the following approaches internal auditors may use when communicating potential solutions to management?",
     "c": [
-      "Internal auditors must require management to develop all action plans independently without auditor input",
-      "Internal auditors always recommend the most cost-effective solution regardless of risk management effectiveness",
+      "Internal auditors present only a fully developed action plan and leave discussion of alternatives to management",
+      "Internal auditors recommend whichever solution is most cost-effective, treating cost as the deciding factor",
       "Internal auditors may present a specific recommendation, several options, or suggest management research options to determine the appropriate course of action",
-      "Internal auditors must always provide a single definitive recommendation to ensure clarity"
+      "Internal auditors provide a single recommendation in every case so management has one clear course of action to follow"
     ],
     "a": 2,
-    "e": "Standard 14.4 provides flexibility: 'If a specific corrective action is identified that addresses a finding, internal auditors may communicate it as a recommendation. Alternatively, internal auditors may present several options for management to consider. In some cases, internal auditors may suggest that management research options and determine the appropriate course of action.'",
+    "e": "Standard 14.4 provides flexibility: 'If a specific corrective action is identified that addresses a finding, internal auditors may communicate it as a recommendation. Alternatively, internal auditors may present several options for management to consider. In some cases, internal auditors may suggest that management research options and determine the appropriate course of action.' The Standard doesn't lock auditors into one rigid format such as cost-driven, single-option, or auditor-free approaches.",
     "cat": "Results: Action Plan"
   }, {
     "q": "When the CAE concludes that management has accepted a risk exceeding the organization's risk appetite, the CAE's first required action under Standard 11.5 is to:",
@@ -5457,13 +5637,13 @@ const MOCK_EXAM_2 = [{
   }, {
     "q": "According to Standard 11.2, which of the following BEST characterizes the 'complete' attribute of effective internal audit communication?",
     "c": [
-      "Every detail from the engagement workpapers must be reflected in the final communication",
+      "Every detail from the engagement workpapers should be reflected in the final communication so nothing is left out",
       "Communications must include relevant, reliable, and sufficient information so readers can reach the same conclusions as internal auditors",
-      "Final communications must be as long as necessary to ensure no finding is omitted, regardless of significance",
-      "Complete communications always include the full text of applicable policies and control frameworks as appendices"
+      "Final communications should be as long as needed to cover each finding in full narrative detail",
+      "Complete communications include the full text of applicable policies and control frameworks as supporting appendices"
     ],
     "a": 1,
-    "e": "Standard 11.2 defines completeness as 'relevant, reliable, and sufficient information and evidence to support the results of internal audit services,' enabling the reader to 'reach the same conclusions as those reached by internal auditors.' This is about providing enough information to support conclusions \u2014 not including every workpaper detail or maximizing length. The test is whether a reasonable reader can follow the auditor's reasoning to the same conclusion.",
+    "e": "Standard 11.2 defines completeness as 'relevant, reliable, and sufficient information and evidence to support the results of internal audit services,' enabling the reader to 'reach the same conclusions as those reached by internal auditors.' This is about providing enough information to support conclusions, not about reproducing every workpaper detail, maximizing narrative length, or attaching full policy texts. The test is whether a reasonable reader can follow the auditor's reasoning to the same conclusion.",
     "cat": "Communication Qualities"
   }, {
     "q": "Under Standard 8.4, the external quality assessment must be performed at least once every five years by which type of assessor?",
@@ -7075,9 +7255,9 @@ const MOCK_EXAM_3 = [{
   "cat": "Results: Action Plan"
 }, {
   "q": "When reviewing a risk map with Risk A (critical impact, remote likelihood) and Risk B (major impact, possible likelihood), the CAE should:",
-  "c": ["Apply professional judgment informed by the organizational risk assessment and stated priorities of senior management and the board", "Assign equal priority to both risks since neither falls in the 'critical/likely' combined category", "Automatically rank Risk A higher because critical impact always outweighs likelihood differences", "Automatically rank Risk B higher because likelihood is always weighted more heavily than impact"],
+  "c": ["Apply professional judgment informed by the organizational risk assessment and stated priorities of senior management and the board", "Assign equal priority to both risks since neither falls in the 'critical/likely' combined category", "Rank Risk A higher on the basis that impact is generally the more decisive factor in prioritization", "Rank Risk B higher on the basis that likelihood is generally the more decisive factor in prioritization"],
   "a": 0,
-  "e": "When two risks land in different likelihood-impact spots with neither clearly bigger, priority should be determined using professional judgment, considering both impact and likelihood together with the organization's risk criteria and established risk appetite, informed by what senior management and the board have said matters most.",
+  "e": "When two risks land in different likelihood-impact spots with neither clearly bigger, priority should be determined using professional judgment, considering both impact and likelihood together with the organization's risk criteria and established risk appetite, informed by what senior management and the board have said matters most, rather than defaulting to a fixed rule that one factor always trumps the other.",
   "cat": "Results: Action Plan"
 }, {
   "q": "A 'critical' rating on a standard four-level assessment scale for controls and risks indicates:",
