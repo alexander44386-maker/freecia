@@ -1033,7 +1033,7 @@ const DAYS = [{
   bullets: ["Managing the internal audit budget is a CAE responsibility, not something left to whoever handles the organization's overall finance function.", "The budget needs to be big enough to actually carry out the strategy and the audit plan \u2014 that includes line items like staff training and audit technology, not just salaries.", "Board sign-off on the budget is expected regardless of whether the function is staffed in-house, outsourced, or some hybrid of the two.", "Day-to-day spending should track the approved budget, and the CAE is expected to flag it \u2014 promptly, not at year-end \u2014 if funding is falling short of what's needed.", "Periodically comparing what was budgeted to what was actually spent, and digging into any large gaps, is part of managing the budget responsibly; a well-built budget may also build in some cushion for unplanned but necessary changes to the plan.", "Where internal audit's money sits inside a larger departmental budget it doesn't fully control, the CAE is still expected to track what's actually available to the function and speak up if it's not enough."],
   qs: [{
     q: "Who must approve the internal audit function's budget?",
-    c: ["The CAE alone", "External auditors", "Senior management only", "The board"],
+    c: ["The CAE", "External auditors", "Senior management", "The board"],
     a: 3,
     e: "The CAE seeks budget approval from the board, whether the function is insourced or outsourced."
   }, {
@@ -1146,7 +1146,7 @@ const DAYS = [{
     e: "Standard 6.3 lists board approval of the charter, plan, budget, and resource plan as a way the board demonstrates support for the IAF."
   }, {
     q: "Under Standard 6.3, senior management supports the internal audit function primarily by:",
-    c: ["Approving the CAE's performance bonus alone", "Promoting recognition of the IAF and enabling its unrestricted access to data, records, information, personnel, and physical properties", "Setting the internal audit plan without board input", "Reviewing every workpaper before issuance"],
+    c: ["Approving the CAE's performance bonus", "Promoting recognition of the IAF and enabling its unrestricted access to data, records, information, personnel, and physical properties", "Setting the internal audit plan without board input", "Reviewing every workpaper before issuance"],
     a: 1,
     e: "Standard 6.3 requires senior management to support recognition of the IAF and to work with the board to enable the IAF's unrestricted access needed to fulfill its mandate."
   }, {
@@ -1284,7 +1284,7 @@ const DAYS = [{
     e: "Standard 9.4 requires at least an annual risk assessment."
   }, {
     q: "Who must approve the internal audit plan and significant changes to it?",
-    c: ["The board", "Senior management alone", "The CAE alone", "External auditors"],
+    c: ["The board", "Senior management", "The CAE", "External auditors"],
     a: 0,
     e: "The board must approve the plan and significant changes."
   }, {
@@ -1395,7 +1395,7 @@ const DAYS = [{
     e: "At least annual communication of internal assessment results is required."
   }, {
     q: "Who must approve the internal audit function's performance objectives at least annually?",
-    c: ["The CAE alone", "The board", "Regulators only", "Competitors"],
+    c: ["The CAE", "The board", "Regulators", "Competitors"],
     a: 1,
     e: "Standard 8.3 requires board approval of performance objectives annually."
   }, {
@@ -3476,7 +3476,7 @@ const BONUS_QUESTIONS = [{
   cat: "Audit Plan"
 }, {
   q: "Significant changes to the internal audit plan must be approved by:",
-  c: ["The audit committee chair acting as sole representative of the board", "The CAE alone, since the plan is an operational document within the CAE's authority", "External auditors, who rely on the internal audit plan for their own risk assessment", "The board and senior management"],
+  c: ["The audit committee chair acting as sole representative of the board", "The CAE, since the plan is an operational document within the CAE's authority", "External auditors, who rely on the internal audit plan for their own risk assessment", "The board and senior management"],
   a: 3,
   e: "Meaningful changes to the internal audit plan need board and senior management sign-off \u2014 the CAE can't approve them alone, and neither can the audit committee chair acting on the board's behalf.",
   cat: "Audit Plan"
@@ -4344,7 +4344,7 @@ const MOCK_EXAM_1 = [{
     "q": "The internal audit plan must be approved by which party, and significant changes to the plan also require whose approval?",
     "c": [
       "The board approves the plan; significant changes must also be approved by the board",
-      "Senior management approves the plan; the CAE alone approves significant changes",
+      "Senior management approves the plan; the CAE approves significant changes",
       "Senior management approves the plan; significant changes require external auditor concurrence",
       "The CAE approves the plan; significant changes require senior management approval primarily"
     ],
@@ -6775,7 +6775,7 @@ const MOCK_EXAM_3 = [{
   "cat": "Audit Function"
 }, {
   "q": "Project budget adjustments during an engagement require approval from:",
-  "c": ["The CAE, staying inside the internal audit budget the board has approved", "The board for any adjustment, regardless of materiality", "Senior management alone, with notification to the CAE after the fact", "External auditors, as they rely on the internal audit budget for coordination purposes"],
+  "c": ["The CAE, staying inside the internal audit budget the board has approved", "The board for any adjustment, regardless of materiality", "Senior management, with notification to the CAE after the fact", "External auditors, as they rely on the internal audit budget for coordination purposes"],
   "a": 0,
   "e": "Adjustments to individual engagement budgets are generally approved by the CAE, provided they remain within the overall budget approved by the board. Significant changes requiring additional overall funding would require appropriate governance approval.",
   "cat": "Audit Function"
@@ -6967,7 +6967,7 @@ const MOCK_EXAM_3 = [{
   "cat": "Audit Plan"
 }, {
   "q": "Significant changes to the internal audit plan, its basis, or its effects must be approved by:",
-  "c": ["The board and senior management", "Senior management, with notification to the board at the next scheduled meeting", "The CAE alone, since the CAE has delegated authority over audit plan execution", "The external auditor, who relies on the internal audit plan for coordination of assurance activities"],
+  "c": ["The board and senior management", "Senior management, with notification to the board at the next scheduled meeting", "The CAE, since the CAE has delegated authority over audit plan execution", "The external auditor, who relies on the internal audit plan for coordination of assurance activities"],
   "a": 0,
   "e": "The plan needs regular updates as major changes occur. Any significant shift in the plan, its basis, or its impact must be communicated to and approved by the board, with appropriate communication to senior management, in accordance with Standard 9.4 — often reviewed at quarterly or semiannual board meetings.",
   "cat": "Audit Plan"
@@ -7095,7 +7095,7 @@ const MOCK_EXAM_3 = [{
   "q": "A self-assessment with independent validation is an acceptable alternative to a full external quality assessment ONLY if:",
   "c": ["Senior management reviews and approves the self-assessment report before board submission", "The CAE certifies in writing that the internal quality assessment results support the substitution", "The board unanimously agrees to waive the external assessment requirement for the current cycle", "The self-assessment is validated by a qualified, independent external professional evaluator"],
   "a": 3,
-  "e": "A self-assessment with independent validation is an acceptable stand-in for a full external assessment: the CAE can run the self-review instead of bringing in an outside team, but only if an independent, qualified assessor signs off on it. Sign-off from just the board and CAE alone doesn't meet that bar.",
+  "e": "A self-assessment with independent validation is an acceptable stand-in for a full external assessment: the CAE can run the self-review instead of bringing in an outside team, but only if an independent, qualified assessor signs off on it. Sign-off from just the board and CAE doesn't meet that bar.",
   "cat": "Audit Quality"
 }, {
   "q": "The methodology for an internal quality assessment under Standard 12.1 includes all of the following EXCEPT:",
@@ -8138,7 +8138,7 @@ const MOCK_EXAM_4 = [{
   "cat": "Audit Plan"
 }, {
   "q": "Who must approve the internal audit plan and significant changes to it?",
-  "c": ["The CAE alone", "The board", "External auditors", "Senior management alone"],
+  "c": ["The CAE", "The board", "External auditors", "Senior management"],
   "a": 1,
   "e": "Standard 9.4 requires that the internal audit plan, and any significant changes to it, be approved by the board. Senior management is consulted, but final approval authority rests with the board.",
   "cat": "Audit Plan"
