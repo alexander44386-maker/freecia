@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8317951667075818"
+     crossorigin="anonymous"></script>
 <meta charset="UTF-8" />
 <title>CIA Part 3 — Review</title>
 <meta name="description" content="Free CIA Part 3 reviewer: Free CIA reviewer, CIA reviewer free download, Certified Internal Auditor free reviewer." />
@@ -118,8 +120,37 @@
   .btn.purple-outline{background:#fff;color:var(--purple-dark);border:2px solid var(--purple);box-shadow:0 4px 0 var(--line);}
 
   .overlay{position:fixed;inset:0;background:#fff;z-index:100;display:flex;flex-direction:column;
-    animation:overlayIn .22s ease both;}
-  @keyframes overlayIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+    animation:overlayIn .3s cubic-bezier(.16,1,.3,1) both;}
+  @keyframes overlayIn{from{opacity:0;transform:translateY(18px) scale(.98);}to{opacity:1;transform:translateY(0) scale(1);}}
+
+  /* ── Legal / info pages: icon badge, per-page accent color, staggered reveal ── */
+  .legal-icon-badge{width:60px;height:60px;border-radius:18px;display:flex;align-items:center;
+    justify-content:center;font-size:30px;margin:2px auto 18px;
+    animation:legalBadgePop .5s cubic-bezier(.34,1.56,.64,1) both;}
+  @keyframes legalBadgePop{from{opacity:0;transform:scale(.5) rotate(-10deg);}to{opacity:1;transform:scale(1) rotate(0);}}
+  .legal-body{text-align:left;}
+  .legal-body > *{animation:legalFadeUp .45s ease both;}
+  @keyframes legalFadeUp{from{opacity:0;transform:translateY(9px);}to{opacity:1;transform:translateY(0);}}
+  .legal-body > *:nth-child(1){animation-delay:.03s}
+  .legal-body > *:nth-child(2){animation-delay:.07s}
+  .legal-body > *:nth-child(3){animation-delay:.11s}
+  .legal-body > *:nth-child(4){animation-delay:.15s}
+  .legal-body > *:nth-child(5){animation-delay:.19s}
+  .legal-body > *:nth-child(6){animation-delay:.23s}
+  .legal-body > *:nth-child(7){animation-delay:.27s}
+  .legal-body > *:nth-child(8){animation-delay:.31s}
+  .legal-body > *:nth-child(9){animation-delay:.35s}
+  .legal-body > *:nth-child(n+10){animation-delay:.38s}
+  .legal-body h3{display:flex;align-items:center;gap:8px;}
+  .legal-body h3::before{content:"";width:7px;height:7px;border-radius:50%;
+    background:var(--accent,var(--blue));flex-shrink:0;}
+  .legal-body a{color:var(--accent-dark,var(--blue-dark));font-weight:700;text-decoration:underline;
+    text-underline-offset:2px;}
+  .legal-blue .legal-icon-badge{background:#DDF4FF;}
+  .legal-green .legal-icon-badge{background:#E7F9D9;}
+  .legal-purple .legal-icon-badge{background:#F3E4FF;}
+  .legal-orange .legal-icon-badge{background:#FFEBD1;}
+  .legal-red .legal-icon-badge{background:#FFDFE0;}
   .overlay-header{display:flex;align-items:center;gap:14px;padding:9px 18px;border-bottom:2px solid var(--line);min-height:62px;box-sizing:border-box;}
   .close-btn{background:none;border:none;font-size:22px;color:var(--gray);cursor:pointer;line-height:1;
     padding:4px 6px;border-radius:8px;min-width:44px;min-height:44px;
@@ -375,6 +406,10 @@
   .home-card .home-title{font-weight:800;font-size:16px;color:var(--ink);}
   .home-card .home-sub{font-size:13px;color:var(--text-muted);font-weight:600;margin-top:2px;}
 
+  .kofi-modal-box{text-align:center;}
+  .kofi-modal-icon{font-size:36px;margin-bottom:6px;}
+  .kofi-modal-box p{font-size:14px;line-height:1.55;color:var(--ink);margin:0 0 18px;}
+
   .home-footer{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;padding:18px 20px 30px;}
   .home-footer button{background:none;border:none;padding:4px 2px;font-size:12px;font-weight:700;
     color:var(--text-muted);cursor:pointer;text-decoration:underline;text-underline-offset:2px;}
@@ -398,6 +433,7 @@
   .home-card.c-purple .home-icon{background:#F3E4FF;}
   .home-card.c-orange .home-icon{background:#FFEBD1;}
   .home-card.c-red .home-icon{background:#FFDFE0;}
+  .home-card.c-yellow .home-icon{background:#FFF4CC;}
   .home-progress-track{margin-top:6px;}
   .home-progress-label{font-size:13px;color:var(--text-muted);font-weight:600;margin-top:5px;}
   .mock-status-line{font-size:13px;font-weight:700;margin-top:2px;}
@@ -10189,7 +10225,11 @@ const LEGAL_PAGES = {
       </>
   },
   privacy: {
-    title: "Privacy Policy",
+    title: "🔒 Privacy Policy",
+    icon: "🔒",
+    colorClass: "legal-purple",
+    accent: "var(--purple)",
+    accentDark: "var(--purple-dark)",
     body: <>
         <p className="legal-updated">Last updated: {LEGAL_UPDATED}</p>
         <h3>Overview</h3>
@@ -10197,11 +10237,11 @@ const LEGAL_PAGES = {
         <h3>Information We Collect</h3>
         <p>The site does not require an account and does not collect names, emails, or other personal details from you directly. Your study progress (completed days, quiz scores, streaks, and settings) is stored locally in your browser using localStorage, and never leaves your device unless you use the built-in export feature yourself.</p>
         <h3>Advertising & Cookies</h3>
-        <p>This site may display ads served by Google AdSense. Google and its partners may use cookies or similar technologies to serve ads based on your prior visits to this or other websites. You can learn more about how Google uses data and manage your ad settings at Google's Ads Settings page.</p>
+        <p>This site may display ads served by Google AdSense. Google and its partners may use cookies or similar technologies to serve ads based on your prior visits to this or other websites.</p>
         <ul>
           <li>Google may use cookies to serve ads based on a user's prior visits.</li>
-          <li>You can opt out of personalized advertising through Google's Ads Settings.</li>
-          <li>Third-party vendors may also use cookies to serve ads on this site.</li>
+          <li>You can opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google's Ads Settings</a>, or generally opt out of third-party vendors' use of cookies at <a href="https://www.aboutads.info/choices" target="_blank" rel="noopener">www.aboutads.info/choices</a>.</li>
+          <li>Third-party vendors may also use cookies to serve ads on this site. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from sites that use its services</a> for more detail.</li>
         </ul>
         <h3>Analytics</h3>
         <p>We may use basic, aggregated analytics to understand overall traffic and usage patterns. This data does not identify you personally.</p>
@@ -10212,7 +10252,11 @@ const LEGAL_PAGES = {
       </>
   },
   about: {
-    title: "About",
+    title: "📖 About",
+    icon: "📖",
+    colorClass: "legal-blue",
+    accent: "var(--blue)",
+    accentDark: "var(--blue-dark)",
     body: <>
         <h3>What is this?</h3>
         <p>CIA Review — Part 3 is a free, independent study companion for the Certified Internal Auditor (CIA) Part 3 exam. It was built by GeorgeCharlie as a focused, distraction-free way to work through the exam syllabus.</p>
@@ -10228,7 +10272,11 @@ const LEGAL_PAGES = {
       </>
   },
   contact: {
-    title: "Contact",
+    title: "✉️ Contact",
+    icon: "✉️",
+    colorClass: "legal-green",
+    accent: "var(--green)",
+    accentDark: "var(--green-dark)",
     body: <>
         <h3>Get in Touch</h3>
         <p>Have feedback, found an error in a question, or have a suggestion for the site? We'd love to hear from you.</p>
@@ -10237,7 +10285,11 @@ const LEGAL_PAGES = {
       </>
   },
   terms: {
-    title: "Terms of Use",
+    title: "📜 Terms of Use",
+    icon: "📜",
+    colorClass: "legal-orange",
+    accent: "var(--orange)",
+    accentDark: "var(--orange-dark)",
     body: <>
         <p className="legal-updated">Last updated: {LEGAL_UPDATED}</p>
         <h3>Acceptance of Terms</h3>
@@ -10255,7 +10307,11 @@ const LEGAL_PAGES = {
       </>
   },
   disclaimer: {
-    title: "Disclaimer",
+    title: "⚠️ Disclaimer",
+    icon: "⚠️",
+    colorClass: "legal-red",
+    accent: "var(--red)",
+    accentDark: "var(--red-dark)",
     body: <>
         <h3>Not Official IIA Material</h3>
         <p>CIA Review — Part 3 is an independent, unofficial study tool. It is not created, reviewed, endorsed, or affiliated with the Institute of Internal Auditors (IIA), which owns the CIA exam and certification.</p>
@@ -10273,7 +10329,10 @@ function LegalScreen({
 }) {
   const data = LEGAL_PAGES[page];
   if (!data) return null;
-  return <div className="overlay">
+  return <div className={"overlay" + (data.colorClass ? " " + data.colorClass : "")} style={{
+    "--accent": data.accent,
+    "--accent-dark": data.accentDark
+  }}>
       <div className="overlay-header">
         <button className="back-btn" onClick={onExit}>←</button>
         <div style={{
@@ -10282,10 +10341,13 @@ function LegalScreen({
       }}>{data.title}</div>
       </div>
       <div className="overlay-body legal-body">
+        {data.icon && <div className="legal-icon-badge">{data.icon}</div>}
         {data.body}
       </div>
     </div>;
 }
+
+const KOFI_URL = "https://ko-fi.com/ciaexamreviewer";
 
 function App() {
   const [view, setView] = useState("home"); // home | path | topics
@@ -10478,6 +10540,7 @@ function App() {
   const [collapsedUnits, setCollapsedUnits] = useState(() => new Set(Object.keys(SECTIONS).filter(k => k !== "A")));
   const [practiceQuizModalOpen, setPracticeQuizModalOpen] = useState(false);
   const [mascotOpen, setMascotOpen] = useState(false);
+  const [kofiModalOpen, setKofiModalOpen] = useState(false);
   const [practiceSections, setPracticeSections] = useState(() => new Set());
   const unlockedCount = useMemo(() => {
     let n = 1;
@@ -10928,6 +10991,15 @@ function App() {
               </div>
               <div className="home-chev">›</div>
             </button>
+
+            <button className="home-card c-yellow" onClick={() => setKofiModalOpen(true)}>
+              <div className="home-icon">☕</div>
+              <div className="home-text">
+                <div className="home-title">Support this Project</div>
+                <div className="home-sub">Help maintain this site</div>
+              </div>
+              <div className="home-chev">›</div>
+            </button>
           </div>
 
           <div className="home-footer">
@@ -10988,6 +11060,17 @@ function App() {
           <div className="mascot-modal-content" onClick={e => e.stopPropagation()}>
             <button className="mascot-close-btn" onClick={() => setMascotOpen(false)} aria-label="Close">✕</button>
             <img src={MASCOT_FULL} alt="GeorgeCharlie mascot" className="mascot-full-img" />
+          </div>
+        </div>}
+
+      {kofiModalOpen && <div className="modal-overlay" onClick={() => setKofiModalOpen(false)}>
+          <div className="modal-box kofi-modal-box" onClick={e => e.stopPropagation()}>
+            <div className="kofi-modal-icon">☕</div>
+            <p>Your contribution helps maintain and improve this free CIA reviewer for everyone. Every bit of support keeps this site free, ad-light, and growing — thank you for being part of that!</p>
+            <div className="modal-actions">
+              <Button color="orange" onClick={() => window.open(KOFI_URL, "_blank", "noopener,noreferrer")}>☕ Support on Ko-fi</Button>
+              <Button color="outline" onClick={() => setKofiModalOpen(false)}>Maybe Later</Button>
+            </div>
           </div>
         </div>}
 
