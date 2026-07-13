@@ -1234,7 +1234,7 @@ const DAYS = [{
     e: "Standard 8.2 requires a resourcing strategy plus board communication of impact."
   }, {
     q: "A tool used to identify the difference between available resources and those needed to achieve the plan is called a:",
-    c: ["Assurance map", "Charter", "Gap analysis", "Risk register only"],
+    c: ["Assurance map", "Resource allocation schedule", "Gap analysis", "Risk register"],
     a: 2,
     e: "A gap analysis compares available vs. needed resources."
   }, {
@@ -1293,7 +1293,7 @@ const DAYS = [{
     e: "This is the IIA Glossary definition of governance."
   }, {
     q: "An organization-wide risk and control matrix is used to:",
-    c: ["Record the internal audit staff's billable hours by engagement", "Approve the audit charter", "Replace the audit plan", "Document risks, their significance, and key controls' design/operating effectiveness"],
+    c: ["Document the organization's audit schedule, engagement budgets, and staffing assignments for the audit cycle", "Summarize the internal audit activity's annual objectives, performance measures, and quality improvement initiatives", "Provide a centralized record of risks, their significance, and the design and operating effectiveness of key controls", "Document risks, their significance, and key controls' design/operating effectiveness"],
     a: 3,
     e: "The matrix documents risks, significance, and control effectiveness."
   }, {
@@ -1345,7 +1345,7 @@ const DAYS = [{
     e: "Standard 9.4 requires communicating rationale for such exclusions."
   }, {
     q: "How frequently might the internal audit plan need updating in a highly dynamic organization?",
-    c: ["Possibly every six months, quarterly, or even monthly", "When regulators demand it", "Once every 5 years", "Never"],
+    c: ["Possibly every six months, quarterly, or even monthly", "After the annual audit plan has been fully completed regardless of emerging risks", "When significant organizational, operational, or regulatory changes occur", "At fixed annual intervals regardless of changes in the organization's risk profile"],
     a: 0,
     e: "Update frequency scales with the organization's rate of change."
   }, {
@@ -1463,7 +1463,7 @@ const DAYS = [{
     e: "Standard 12.1 requires prompt disclosure of impactful nonconformance."
   }, {
     q: "Ongoing monitoring, as part of internal quality assessment, primarily involves:",
-    c: ["Nothing — it's optional", "External assessor interviews only", "A once-per-decade audit", "Day-to-day supervision, review, and measurement of the IAF"],
+    c: ["Periodic independent reviews performed at predetermined intervals by qualified assessors", "Formal board evaluations of the chief audit executive's annual performance", "Annual external quality assessments conducted by an independent review team", "Day-to-day supervision, review, and measurement of the IAF"],
     a: 3,
     e: "Ongoing monitoring = routine day-to-day supervision/review/measurement."
   }, {
@@ -1517,7 +1517,7 @@ const DAYS = [{
     e: "Percentage of plan completed on time is a cited performance category."
   }, {
     q: "Performance objectives should be balanced across which outcome areas?",
-    c: ["Financial efficiency", "Stakeholder expectations, HR needs, financial/operational efficiency, and learning/development", "Marketing metrics", "Competitor benchmarking"],
+    c: ["Stakeholder expectations, HR needs, and financial efficiency", "Stakeholder expectations, HR needs, financial/operational efficiency, and learning/development", "Financial/operational efficiency, and learning/development and marketing metrics", "HR needs, financial/operational efficiency and competitor benchmarking"],
     a: 1,
     e: "Standard 12.2 implementation guidance lists these balanced outcome areas."
   }, {
@@ -1586,7 +1586,7 @@ const DAYS = [{
     e: "Standard 13.1 requires ongoing communication throughout the engagement, not just at closing."
   }, {
     q: "The primary benefit of timely interim communication during an engagement is that it:",
-    c: ["Eliminates the need for a final report", "Allows management to begin corrective action before the engagement closes", "Guarantees management agreement with all findings", "Removes the CAE's oversight responsibilities"],
+    c: ["Provides management with an opportunity to validate factual information before the final communication is issued", "Allows management to begin corrective action before the engagement closes", "Guarantees management agreement with all findings", "Reduces the likelihood that significant issues will remain unaddressed until the engagement is completed"],
     a: 1,
     e: "Interim communication allows management to act on issues before the final communication is issued."
   }, {
@@ -1692,7 +1692,7 @@ const DAYS = [{
     e: "Standard 13.2 specifically calls out considering fraud-related risks when identifying and prioritizing significant risks."
   }, {
     q: "Residual risk is best described as:",
-    c: ["The total risk before any controls are considered", "The share of inherent risk that's left over after management carries out its risk responses", "A risk that has been completely eliminated", "The risk of a control itself failing"],
+    c: ["The total risk before any controls are considered", "The share of inherent risk that's left over after management carries out its risk responses", "The possibility that a control designed to reduce risk will not operate as intended", "The risk of a control itself failing"],
     a: 1,
     e: "Residual (net) risk is what's left of inherent risk after risk responses are applied."
   }, {
@@ -1739,7 +1739,7 @@ const DAYS = [{
     e: "Higher likelihood at equal impact generally results in a higher priority ranking."
   }, {
     q: "A tool that links business objectives, risks, control processes, and key information to support audits is called a:",
-    c: ["Engagement letter", "Risk and control matrix", "Audit charter", "Balanced scorecard"],
+    c: ["Process flowchart", "Risk and control matrix", "Enterprise risk register", "Audit universe"],
     a: 1,
     e: "The risk and control matrix links these elements to support internal audit work."
   }, {
@@ -1803,7 +1803,7 @@ const DAYS = [{
   bullets: ["Every potential finding needs its significance actually evaluated \u2014 not just logged and moved past.", "That evaluation typically means working with management to pin down the root cause, project the likely effect, and judge how serious the whole thing really is.", "Significance is a function of both likelihood (how probable the issue is or how often it could recur) and impact on governance, risk management, or control processes.", "Where a finding suggests the organization is carrying meaningfully more risk than it should be, that needs to be communicated clearly \u2014 not softened or folded into a lower-priority item.", "Findings get prioritized using whatever methodology the CAE has established, so similar issues are treated consistently across the whole engagement.", "Root cause analysis is meant to go past the obvious explanation \u2014 treating only the surface-level cause usually means the same finding resurfaces later.", "A common approach quantifies exposure where possible and otherwise relies on professional judgment, layering in existing control design and effectiveness before landing on the residual risk that actually matters.", "This evaluation isn't just an internal exercise \u2014 the resulting ratings or rankings are a tool for communicating priority and driving actual follow-through on action plans."],
   qs: [{
     q: "To determine a finding's significance, internal auditors must consider:",
-    c: ["The finding's alphabetical order", "The size of the department's budget only", "Only the auditor's personal preference", "The likelihood of the risk occurring and its potential impact"],
+    c: ["The amount of audit effort required to identify and document the finding", "Whether the finding was identified during a high-risk engagement rather than a routine engagement", "Management's willingness to implement the auditor's recommended corrective actions", "The likelihood of the risk occurring and its potential impact"],
     a: 3,
     e: "Significance = likelihood × impact on governance/risk/control."
   }, {
@@ -2560,7 +2560,7 @@ const IIA_QUESTIONS = [{
   cat: "Effectiveness vs Efficiency"
 }, {
   q: "'Compliance with internal audit laws and/or regulations' as a quality consideration under Standard 8.3 is MOST accurately classified as:",
-  c: ["A governance measure, because the board bears ultimate responsibility for organizational regulatory compliance", "An efficiency measure, because compliance reduces the cost of regulatory penalties and legal exposure", "A conformance measure, because it assesses adherence to external legal requirements rather than operational performance output", "An effectiveness measure, because legal compliance is a required outcome the internal audit function must achieve"],
+  c: ["A governance measure, because the board bears ultimate responsibility for organizational regulatory compliance", "An efficiency measure, because compliance reduces the cost of regulatory penalties and legal exposure", "A conformance measure, because it assesses adherence to external legal requirements", "An effectiveness measure, because legal compliance is a required outcome the internal audit function must achieve"],
   a: 2,
   e: "Standard 8.3 identifies 'compliance with internal audit laws and/or regulations' as a quality consideration. This measures whether the internal audit function adheres to required external standards—a conformance measure. It is distinct from efficiency (resource utilization) and effectiveness (outcomes achieved). Conformance measures assess whether activities meet prescribed standards, rules, or regulations, independent of how efficiently resources are used or how much organizational improvement results.",
   cat: "Effectiveness vs Efficiency"
@@ -2950,7 +2950,7 @@ const IIA_QUESTIONS = [{
   cat: "Audit Function"
 }, {
   q: "The audit committee reviews the following information: audit plan completion 91%; stakeholder satisfaction increased; repeat findings decreased; average report issuance time increased; and coverage of emerging risks increased significantly. Which conclusion is most appropriate?",
-  c: ["The internal audit function became less effective because reports took longer to issue.", "Internal audit should reduce work performed during engagements to improve report timeliness.", "Audit plan completion should remain the primary measure of internal audit effectiveness.", "The increased report issuance time should be evaluated together with the broader performance results before concluding that performance declined."],
+  c: ["The internal audit function became less effective because reports took longer to issue.", "Internal audit should reduce work performed during engagements to improve report timeliness.", "Audit plan completion should remain the primary measure of internal audit effectiveness.", "The increased report issuance time should be evaluated together with the broader performance results."],
   a: 3,
   e: "Performance should be judged on a balanced set of measures, so a longer average report issuance time needs to be weighed against everything else — increased stakeholder satisfaction, fewer repeat findings, and significantly expanded coverage of emerging risk — before concluding effectiveness has slipped. One metric alone doesn't settle the question, cutting back on engagement work just to speed up reporting could hurt audit quality, and completion rate is only one piece that should sit alongside effectiveness, quality, and stakeholder value.",
   cat: "Effectiveness vs Efficiency"
@@ -3350,7 +3350,7 @@ const BONUS_QUESTIONS = [{
   cat: "Audit Function"
 }, {
   q: "On-the-job training methods such as job rotation, apprenticeships, and mentoring are characterized as MOST suited to:",
-  c: ["Developing problem-solving and complex interpersonal skills", "Teaching abstract concepts through simulation and case study analysis", "Reducing errors and workplace disruption during learning", "The acquisition of technical skills, though they may disrupt the workplace"],
+  c: ["Developing problem-solving and complex interpersonal skills", "Teaching abstract concepts through simulation and case study analysis", "Reducing errors and workplace disruption during learning", "The acquisition of technical skills"],
   a: 3,
   e: "On-the-job methods like job rotation, apprenticeships, and mentoring tend to cost less than off-the-job training but can disrupt work and lead to more mistakes; they suit building technical skills. Off-the-job methods such as lectures and simulations are better for developing problem-solving and interpersonal skills.",
   cat: "Audit Function"
@@ -3596,7 +3596,7 @@ const BONUS_QUESTIONS = [{
   cat: "Audit Plan"
 }, {
   q: "Which of the following internal risk factors is used in most risk models to set audit priorities?",
-  c: ["Industry growth rates and regulatory agency staffing levels", "Quality of and adherence to controls, timing and results of last engagement, and management competence", "Changes in foreign currency exchange rates and interest rates", "Competitor actions and supplier pricing dynamics"],
+  c: ["Industry growth rates and regulatory agency staffing levels", "Quality of and adherence to controls, timing and results of last engagement", "Changes in foreign currency exchange rates and interest rates", "Competitor actions and supplier pricing dynamics"],
   a: 1,
   e: "Internal risk factors used in risk models include: quality of and adherence to controls, degree of change (expenditure/revenue trends), timing and results of last engagement, impact, likelihood, materiality, asset liquidity and value, management competence, potential for fraud, and regulatory penalties.",
   cat: "Audit Plan"
@@ -3860,7 +3860,7 @@ const BONUS_QUESTIONS = [{
   cat: "Results: Communication"
 }, {
   q: "Interim engagement communications are characterized by which of the following?",
-  c: ["They are exclusively used to update the audit committee on significant governance findings", "They flag things that shouldn't wait for the final report -- major issues, scope changes, or status updates on lengthy engagements", "They are always written, formal communications reviewed and approved by the CAE before distribution", "They replace the need for a final report when the engagement duration exceeds 30 days"],
+  c: ["They are exclusively used to update the audit committee on significant governance findings", "They flag things that shouldn't wait for the final report", "They are always written, formal communications reviewed and approved by the CAE before distribution", "They replace the need for a final report when the engagement duration exceeds 30 days"],
   a: 1,
   e: "Interim communication covers anything shared before the final report \u2014 used for things that shouldn't wait, like a significant matter that turns up (even if unrelated to the engagement), a scope change, or a progress update on a long engagement. Using interim updates doesn't remove the need for a final report.",
   cat: "Results: Communication"
@@ -7093,7 +7093,7 @@ const MOCK_EXAM_3 = [{
   "cat": "Audit Quality"
 }, {
   "q": "Under Standard 8.4, an external quality assessment must be performed at LEAST once every:",
-  "c": ["Three years", "Five years", "Two years", "Seven years"],
+  "c": ["Three years", "Five years", "Two years", "Four years"],
   "a": 1,
   "e": "Standard 8.4 requires an external quality assessment at least once every five years. This is a well-tested, specific requirement. The board may determine that more frequent assessments are appropriate given leadership changes, significant methodology changes, or significant staff turnover.",
   "cat": "Audit Quality"
@@ -7315,7 +7315,7 @@ const MOCK_EXAM_3 = [{
   "cat": "Results: Action Plan"
 }, {
   "q": "Aggregating and prioritizing findings from multiple audits as a data analytics methodology primarily achieves:",
-  "c": ["Satisfying QAIP reporting requirements by compiling a comprehensive register of all findings", "Reducing the internal audit function's workload by consolidating multiple reports into a single summary", "Replacing the need for individual engagement conclusions with organization-level conclusions primarily", "Providing a holistic view of the organization's risk landscape by identifying overarching problem areas and their interconnectedness"],
+  "c": ["Satisfying QAIP reporting requirements by compiling a comprehensive register of all findings", "Reducing the internal audit function's workload by consolidating multiple reports into a single summary", "Replacing the need for individual engagement conclusions with organization-level conclusions primarily", "Providing a holistic view of the organization's risk landscape by identifying overarching problem areas"],
   "a": 3,
   "e": "Rolling up findings across audits gives a fuller picture of organizational risk and shows how issues connect. It also helps auditors focus their time on the most critical findings and concentrate resources where they matter most.",
   "cat": "Results: Action Plan"
